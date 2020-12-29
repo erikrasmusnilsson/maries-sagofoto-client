@@ -1,0 +1,17 @@
+.Header { 
+    padding: 3.2rem;
+    background-color: #eee;
+}
+
+.HeaderContent {
+    width: 76.8rem;
+    margin: auto;
+}
+
+.HeaderContent h2 {
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.HeaderContent p {
+    font-family: 'Petrona', serif;
+}

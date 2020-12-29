@@ -1,0 +1,23 @@
+.Content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    padding: 3.2rem;
+    background-color: #fff;
+    z-index: 11;
+
+    transition: all .3s ease-out;
+}
+
+.Show {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    pointer-events: all;
+}
+
+.Hide {
+    opacity: 0;
+    transform: translate(-50%, -70%);
+    pointer-events: none;
+}

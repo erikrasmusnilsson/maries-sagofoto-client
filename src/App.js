@@ -1,25 +1,67 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from 'react';
+import styles from './app.module.css';
+import { Switch, Route } from 'react-router-dom';
+import axios from 'axios';
+import { connect } from 'react-redux';
 
-function App() {
+import * as actionTypes from './store/actions';
+
+import { Header } from './fragments/header';
+import { Footer } from './fragments/footer';
+
+import { Home } from './pages/home'; 
+import { Prices } from './pages/prices';
+import { Portfolio } from './pages/portfolio';
+import { UserPanel } from './pages/user-panel';
+import { AddAdmin } from './pages/add-admin';
+import { AdminPanel } from './pages/admin-panel';
+
+const App = ({ user, login, logout }) => {
+  
+  const fetchUser = async () => {
+    try {
+      if (user) return;
+
+      const response = await axios.get('/api/admins', { withCredentials: true });
+      login(response.data);
+    } catch (error) {
+      logout();
+    }
+  };
+
+  useEffect(fetchUser, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={ styles.App }>
+      <Header user={ user } login={ login } logout={ logout } />
+      <Switch>
+        <Route exact path='/' component={ Home } />
+        <Route exact path='/priser' component={ Prices } />
+        <Route exact path='/panel' component={ UserPanel } />
+        <Route exact path='/portfolio' component={ Portfolio } />
+        <Route exact path='/add-admin'>
+          <AddAdmin user={ user } />
+        </Route>
+        <Route exact path='/admin-panel'>
+          <AdminPanel user={ user } />
+        </Route>
+      </Switch>
+      <Footer />
     </div>
   );
+};
+
+const mapStateToProps = state => {
+  return {
+    user: state.user
+  };
 }
 
-export default App;
+const mapDispatchToProps = dispatch => {
+  return {
+    login: (user) => dispatch({ type: actionTypes.LOG_IN, user }),
+    logout: () => dispatch({ type: actionTypes.LOG_OUT }),
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

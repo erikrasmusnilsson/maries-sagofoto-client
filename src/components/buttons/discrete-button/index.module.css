@@ -1,0 +1,13 @@
+.Wrapper {
+    display: block;
+}
+
+.Button {
+    outline: none;
+    background: transparent;
+
+    border: .5rem solid transparent;
+    color: #3B3939;
+
+    transition: all .3s ease-out;
+}

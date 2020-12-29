@@ -1,0 +1,15 @@
+.Wrapper {
+    display: block;
+}
+
+.Button {
+    outline: none;
+    border: 0px;
+    background: #e74c3c;
+
+    padding: 1.2rem 1.8rem;
+    color: #fff;
+
+    transition: all .3s ease-out;
+    text-transform: uppercase;
+}

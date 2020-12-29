@@ -1,0 +1,23 @@
+.Wrapper {
+    background-color: #F9F2F1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1.2rem;
+}
+
+.Header {
+    color: #523A37;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.Content {
+    color: #7A5752;
+    font-family: 'Petrona', serif;
+    width: 80%;
+    text-align: center;
+    line-height: 1.7;
+}

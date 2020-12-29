@@ -1,0 +1,47 @@
+.Wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Reversed {
+    flex-flow: row-reverse;
+}
+
+.Reversed .Information {
+    text-align: right;
+}
+
+.Image {
+    max-width: 15rem;
+
+    border-radius: 100%;
+    margin: 0 6.4rem;
+}
+
+.Name {
+    font-family: 'Nanum Myeongjo', serif;
+    color: #523A37;
+}
+
+.Description {
+    font-family: 'Petrona', serif;
+    color: #7A5752;
+}
+
+@media only screen and (max-width: 768px) {
+    .Wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .Image {
+        align-self: center;
+        margin-bottom: 2.4rem;  
+    }
+
+    .Reversed .Information {
+        text-align: left;
+    }
+}

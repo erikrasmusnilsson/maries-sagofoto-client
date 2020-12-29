@@ -1,0 +1,77 @@
+.Wrapper {
+    width: 100%;
+
+}
+
+.HeaderImage {
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center center;
+}
+
+.Introduction {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+
+    padding: 2.4rem;
+    width: 75%;
+    margin: auto;
+}
+
+.Introduction > * {
+    flex: 1;
+}
+
+.Introduction > div {
+    margin-right: 1.2rem;
+}
+
+.IntroductionImage {
+    margin-left: 1.2rem;
+    max-width: 50rem;
+    background-size: cover;
+    background-position: center center;
+}
+
+.EmployeeIntros {
+    width: 65%;
+    margin: 6.4rem auto;
+}
+
+.EmployeeIntros > * { 
+    padding: 3.2rem;
+}
+
+.ViewPortfolio {
+    display: flex;
+    justify-content: center;
+    margin: 12.8rem auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .HeaderImage {
+        height: 30vh;
+        background-size: cover;
+    }
+
+    .IntroductionImage {
+        display: none;
+    }
+
+    .Introduction > div {
+        margin-right: 0;
+    }
+
+    .EmployeeIntros {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .Introduction {
+        width: 100%;
+    }
+}

@@ -3,11 +3,24 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+
+import { BrowserRouter as Router } from 'react-router-dom';
+import axios from 'axios';
+import { reducer } from './store/reducer';
+
+axios.defaults.baseURL = 'http://localhost:3001';
+
+const store = createStore(reducer);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={ store }>
+    <Router>
+        <App />
+    </Router>
+  </Provider>,
+
   document.getElementById('root')
 );
 

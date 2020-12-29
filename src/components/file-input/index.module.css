@@ -1,0 +1,44 @@
+.Wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.Input {
+    display: none;
+}
+
+.Label {
+    display: block;
+    background-color: #eee;
+    padding: 2.4rem 3.2rem;
+    color: #3B3939;
+    transition: all .3s ease-out;
+    border-radius: .8rem;
+    z-index: 2;
+}
+
+.ActiveLabel {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.Button {
+    transform: translate(-100%, 0);
+    opacity: 0;
+    z-index: 1;
+    transition: all .3s ease-out;
+    background-color: #27ae60;
+    border-radius: .8rem;
+
+    padding: 1.2rem;
+    padding-left: 3.2rem;
+}
+
+.Button button {
+    color: #fff;
+}
+
+.ActiveButton {
+    transform: translate(-3.2rem, 0);
+    opacity: 1;
+}

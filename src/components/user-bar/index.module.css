@@ -1,0 +1,22 @@
+.Wrapper {
+    background: rgb(153,116,104);
+    background: linear-gradient(90deg, rgba(153,116,104,1) 0%, rgba(176,138,125,1) 100%);
+    padding: .8rem;
+    width: 100%;
+}
+
+.Controls {
+    display: flex; 
+    justify-content: flex-end;
+    color: #fff;
+}
+
+.Controls a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.Controls .Icon {
+    color: #fff;
+    margin-right: 1.2rem;
+}

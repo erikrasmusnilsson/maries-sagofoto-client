@@ -1,0 +1,9 @@
+.Form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Form > * {
+    margin-right: 1.2rem;
+}

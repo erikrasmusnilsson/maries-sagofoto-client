@@ -1,0 +1,15 @@
+.Wrapper {
+    display: flex; 
+    justify-content: flex-end;
+    color: #fff;
+}
+
+.Wrapper a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.Wrapper .Icon {
+    color: #fff;
+    margin-right: 1.2rem;
+}

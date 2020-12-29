@@ -1,0 +1,34 @@
+.Wrapper {
+    margin-top: 6.4rem;
+}
+
+.ContactInformation {
+    padding: 2.4rem;
+    width: 100%;
+    background: #3B3939;
+    color: #fff;
+}
+
+.ContactInformation ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.ContactInformation ul li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: .8rem;
+}
+
+.ContactInformation ul li > * {
+    margin: 0 .8rem;
+}
+
+.Copyright {
+    background: #282626;
+    margin: 0; 
+    padding: .4rem;
+    color: #6F6F6F;
+    text-align: center;
+}
