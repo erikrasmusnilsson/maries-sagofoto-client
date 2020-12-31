@@ -2,13 +2,14 @@ import { useState, useEffect } from 'react';
 import styles from './index.module.css';
 import axios from 'axios';
 
-import { SimpleButton } from '../../components/buttons/basic-button';
-import { Backdrop } from '../../components/backdrop';
-import { ScrollFadeIn } from '../../components/scroll-fade-in';
+import { SimpleButton } from '../buttons/basic-button';
+import { Backdrop } from '../backdrop';
+import { ScrollFadeIn } from '../scroll-fade-in';
+import { Modal } from '../modal';
 
-const Portfolio = () => {
+const PortfolioGrid = () => {
     const [photos, setPhotos] = useState([]);
-    const [magnified, setMagnified] = useState();
+    const [magnified, setMagnified] = useState('');
 
     const fetchPortfolio = async () => {
         const response = await axios.get('/api/portfolio');
@@ -18,9 +19,9 @@ const Portfolio = () => {
     useEffect(() => fetchPortfolio(), []);
 
     const focusedPhoto = magnified ? (
-        <div className={ styles.Magnified }>
-            <div style={{ background: `url(${axios.defaults.baseURL}/static/portfolio/${magnified})` }}></div>
-        </div>
+        <Modal show={ magnified } onclose={ () => demagnify() }>
+            <div className={ styles.Magnified } style={{ background: `url(${axios.defaults.baseURL}/static/portfolio/${magnified})` }}></div>
+        </Modal>
     ) : null;
 
     const magnify = (photo) => {
@@ -28,7 +29,7 @@ const Portfolio = () => {
     }
 
     const demagnify = () => {
-        setMagnified(null);
+        setMagnified('');
     }
 
     const portfolio = photos.map(photo => {
@@ -46,13 +47,15 @@ const Portfolio = () => {
 
     return (
         <div className={ styles.Wrapper }>
-            { focusedPhoto }
+            <Modal show={ magnified } onclose={ demagnify }>
+                <div className={ styles.Magnified } style={{ background: `url(${axios.defaults.baseURL}/static/portfolio/${magnified})` }}></div>
+            </Modal>
             <div className={ styles.Grid }>
                 { portfolio }
             </div>
-            <Backdrop show={magnified} onclick={ demagnify } />
+            { /*<Backdrop show={magnified} onclick={ demagnify } /> */ }
         </div>
     );
 };
 
-export { Portfolio };
+export { PortfolioGrid };

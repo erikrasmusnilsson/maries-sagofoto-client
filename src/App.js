@@ -12,7 +12,6 @@ import { Footer } from './fragments/footer';
 import { Home } from './pages/home'; 
 import { Prices } from './pages/prices';
 import { Portfolio } from './pages/portfolio';
-import { UserPanel } from './pages/user-panel';
 import { AddAdmin } from './pages/add-admin';
 import { AdminPanel } from './pages/admin-panel';
 
@@ -37,7 +36,6 @@ const App = ({ user, login, logout }) => {
       <Switch>
         <Route exact path='/' component={ Home } />
         <Route exact path='/priser' component={ Prices } />
-        <Route exact path='/panel' component={ UserPanel } />
         <Route exact path='/portfolio' component={ Portfolio } />
         <Route exact path='/add-admin'>
           <AddAdmin user={ user } />
