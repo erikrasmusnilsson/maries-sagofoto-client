@@ -36,7 +36,7 @@ const PortfolioGrid = () => {
         return (
             <ScrollFadeIn direction='to-top' offset={0}>
                 <div className={ styles.Column } key={ photo }>
-                    <img src={`${axios.defaults.baseURL}/static/portfolio/${photo}`} />
+                    <img src={`${axios.defaults.baseURL}/portfolio/${photo}`} />
                     <div className={ styles.Overlay }>
                         <SimpleButton content='Förstora' onclick={() => magnify(photo)} />
                     </div>
