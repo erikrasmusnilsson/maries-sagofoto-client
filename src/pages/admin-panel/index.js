@@ -51,7 +51,8 @@ const AdminPanel = ({ user }) => {
                     <DiscreteButton onclick={ nextPortfolioPage } content={ <i className="fas fa-arrow-right"></i> } />
                 </div>
                 <div className={ styles.MegaButtons }>
-                    <Link to='/add-admin'><i className="fas fa-user-cog"></i></Link>
+                    <Link to='/add-admin'><i class="fas fa-user-plus"></i></Link>
+                    <Link to='/change-password'><i className="fas fa-user-cog"></i></Link>
                 </div>
             </div>
         </div>

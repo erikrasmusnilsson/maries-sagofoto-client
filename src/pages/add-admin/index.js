@@ -45,7 +45,7 @@ const AddAdmin = ({ user }) => {
             <div className={ styles.Header }>
                 <div className={ styles.HeaderContent }>
                     <h2>Inloggad som { user.username }</h2>
-                    <p>Här kan du ladda upp bilder till portfolion med mer funktioner som kommer snart.</p>
+                    <p>Här kan du lägga till användare som också kan uppdatera portfolion samt i sin tur lägga till egna användare.</p>
                 </div>
             </div>
             <div className={ styles.Content }>
