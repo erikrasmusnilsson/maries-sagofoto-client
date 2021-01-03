@@ -1,0 +1,30 @@
+.Header { 
+    padding: 3.2rem;
+    background-color: #eee;
+    margin-bottom: 3.2rem;
+}
+
+.HeaderContent {
+    width: 76.8rem;
+    margin: auto;
+}
+
+.HeaderContent h2 {
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.HeaderContent p {
+    font-family: 'Petrona', serif;
+}
+
+.Content {
+    width: 76.8rem;
+    margin: auto;
+    margin-bottom: 12.8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.Content > * {
+    margin: 1.2rem;
+}
