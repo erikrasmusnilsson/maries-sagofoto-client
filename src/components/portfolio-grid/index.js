@@ -20,7 +20,7 @@ const PortfolioGrid = () => {
 
     const focusedPhoto = magnified ? (
         <Modal show={ magnified } onclose={ () => demagnify() }>
-            <div className={ styles.Magnified } style={{ background: `url(${axios.defaults.baseURL}/static/portfolio/${magnified})` }}></div>
+            <div className={ styles.Magnified } style={{ background: `url(${axios.defaults.baseURL}/portfolio/${magnified})` }}></div>
         </Modal>
     ) : null;
 
@@ -48,12 +48,11 @@ const PortfolioGrid = () => {
     return (
         <div className={ styles.Wrapper }>
             <Modal show={ magnified } onclose={ demagnify }>
-                <div className={ styles.Magnified } style={{ background: `url(${axios.defaults.baseURL}/static/portfolio/${magnified})` }}></div>
+                <div className={ styles.Magnified } style={{ background: `url(${axios.defaults.baseURL}/portfolio/${magnified})` }}></div>
             </Modal>
             <div className={ styles.Grid }>
                 { portfolio }
             </div>
-            { /*<Backdrop show={magnified} onclick={ demagnify } /> */ }
         </div>
     );
 };

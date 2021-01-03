@@ -28,7 +28,7 @@ const PortfolioList = ({ photos, ondelete }) => {
     const portfolio = photos.map(photo => {
         return (
             <Card key={ photo }>
-                <div className={ styles.Photo } style={{ background: `url(${axios.defaults.baseURL}/static/portfolio/${photo})` }}></div>
+                <div className={ styles.Photo } style={{ background: `url(${axios.defaults.baseURL}/portfolio/${photo})` }}></div>
                 <DangerButton content='Ta bort' onclick={ () => selectPhoto(photo) } />
             </Card>
         );
