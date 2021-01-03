@@ -9,6 +9,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      
+      - name: Print current listing
+        run: ls -l
 
       - name: Set up SSH
         run: |
@@ -35,6 +38,6 @@ jobs:
           SSH_HOST: ${{ secrets.SERVER_IP }}
           SSH_USER: ${{ secrets.SERVER_USER }}
       
-      - name: Update deployment
-        run: |
-          ssh staging 'cd maries-sagofoto-client && git pull && npm run build && rm -r ~/maries-sagofoto-server/public/client && mv build/ ~/maries-sagofoto-server/public/client'
+      #- name: Update deployment
+      #  run: |
+      #    ssh staging 'cd maries-sagofoto-client && git pull && npm run build && rm -r ~/maries-sagofoto-server/public/client && mv build/ ~/maries-sagofoto-server/public/client'
