@@ -1,0 +1,40 @@
+name: deploy
+
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up SSH
+        run: |
+          mkdir ~/.ssh
+          touch ~/.ssh/github_actions_rsa
+          
+      - name: Run a multi-line script
+        run: |
+          touch ~/.ssh/github_actions_rsa
+          echo "$PRIVATE_RSA_KEY" > ~/.ssh/github_actions_rsa
+          chmod 600 ~/.ssh/github_actions_rsa
+          eval $(ssh-agent)
+          ssh-add ~/.ssh/github_actions_rsa
+          ssh-keyscan -H ${{ secrets.SERVER_IP }} > ~/.ssh/known_hosts
+          cat >>~/.ssh/config <<END
+          Host staging
+            HostName $SSH_HOST
+            User $SSH_USER
+            IdentityFile ~/.ssh/github_actions_rsa
+            StrictHostKeyChecking no
+          END
+        env:
+          PRIVATE_RSA_KEY: ${{ secrets.RSA_KEY }}
+          SSH_HOST: ${{ secrets.SERVER_IP }}
+          SSH_USER: ${{ secrets.SERVER_USER }}
+      
+      - name: Update deployment
+        run: |
+          ssh staging 'cd maries-sagofoto-client && git pull && npm run build && rm -r ~/maries-sagofoto-server/public/client && mv build/ ~/maries-sagofoto-server/public/client'
