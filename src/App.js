@@ -14,6 +14,7 @@ import { Prices } from './pages/prices';
 import { Portfolio } from './pages/portfolio';
 import { AddAdmin } from './pages/add-admin';
 import { AdminPanel } from './pages/admin-panel';
+import { ChangePassword } from './pages/change-password';
 
 const App = ({ user, login, logout }) => {
   
@@ -42,6 +43,9 @@ const App = ({ user, login, logout }) => {
         </Route>
         <Route exact path='/admin-panel'>
           <AdminPanel user={ user } />
+        </Route>
+        <Route exact path='/change-password'>
+          <ChangePassword user={ user } />
         </Route>
       </Switch>
       <Footer />
