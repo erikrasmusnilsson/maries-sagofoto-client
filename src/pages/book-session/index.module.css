@@ -18,7 +18,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .HeaderContent .Introduction {
+    .HeaderContent {
       width: 100%;
       text-align: justify;
     }
@@ -27,10 +27,29 @@
 .Content {
     width: 76.8rem;
     margin: auto;
+    margin-bottom: 12.8rem;
     display: flex;
     flex-direction: column;
 }
 
 .Content > * {
     margin: 1.2rem;
+}
+
+.Content > div button {
+    float: right;
+}
+
+.Row {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.Row > input:nth-child(1) {
+    margin-right: 2.4rem;
+}
+
+.Row > * {
+    flex: 1;
 }
