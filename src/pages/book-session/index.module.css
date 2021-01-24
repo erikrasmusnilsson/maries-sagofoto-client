@@ -22,6 +22,25 @@
       width: 100%;
       text-align: justify;
     }
+
+    .Content {
+        width: 100% !important;
+        margin: auto;
+        margin-bottom: 12.8rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Row {
+        margin: 0 !important;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .Row > * {
+        flex: 1;
+        margin: 1.2rem !important;
+    }
 }
 
 .Content {
