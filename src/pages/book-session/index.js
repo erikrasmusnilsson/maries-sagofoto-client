@@ -10,7 +10,7 @@ const BookSession = () => {
     const [showModal, setShowModal] = useState(false);
     const [modalMessage, setModalMessage] = useState('');
     const [modalTitle, setModalTitle] = useState('');
-
+  
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
@@ -57,7 +57,7 @@ const BookSession = () => {
             setMessage("");
         }
     }
-
+    
     return (
         <div>
             <div className={ styles.Header }>

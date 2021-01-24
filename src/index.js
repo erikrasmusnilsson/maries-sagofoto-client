@@ -11,7 +11,6 @@ import axios from 'axios';
 import { reducer } from './store/reducer';
 
 axios.defaults.baseURL = 'http://68.183.211.72:3001';
-//axios.defaults.baseURL = 'http://localhost:3001';
 
 const store = createStore(reducer);
 
