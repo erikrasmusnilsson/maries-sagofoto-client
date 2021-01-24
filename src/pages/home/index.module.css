@@ -1,6 +1,5 @@
 .Wrapper {
     width: 100%;
-
 }
 
 .HeaderImage {
@@ -31,7 +30,6 @@
 
 .IntroductionImage {
     margin-left: 1.2rem;
-    max-width: 50rem;
     background-size: cover;
     background-position: center center;
 }

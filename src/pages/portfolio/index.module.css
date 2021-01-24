@@ -17,6 +17,14 @@
     margin: auto;
 }
 
+@media only screen and (max-width: 768px) {
+    .HeaderContent .Introduction {
+      width: 100%;
+      text-align: justify;
+    }
+  }
+  
+
 .HeaderContent h2 {
     font-family: 'Nanum Myeongjo', serif;
 }

@@ -12,6 +12,7 @@ import { Footer } from './fragments/footer';
 import { Home } from './pages/home'; 
 import { Prices } from './pages/prices';
 import { Portfolio } from './pages/portfolio';
+import { BookSession } from './pages/book-session';
 import { AddAdmin } from './pages/add-admin';
 import { AdminPanel } from './pages/admin-panel';
 import { ChangePassword } from './pages/change-password';
@@ -38,6 +39,7 @@ const App = ({ user, login, logout }) => {
         <Route exact path='/' component={ Home } />
         <Route exact path='/priser' component={ Prices } />
         <Route exact path='/portfolio' component={ Portfolio } />
+        <Route exact path='/boka-fotografering' component={ BookSession } />
         <Route exact path='/add-admin'>
           <AddAdmin user={ user } />
         </Route>
