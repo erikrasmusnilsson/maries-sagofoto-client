@@ -1,10 +1,17 @@
+import { useHistory } from 'react-router-dom';
 import styles from './index.module.css';
 import { InformationPanel } from '../../components/information-panel';
 import { EmployeeIntro } from '../../components/employee-intro';
 import { SimpleButton } from '../../components/buttons/basic-button';
 import { ScrollFadeIn } from '../../components/scroll-fade-in';
 
-const home = () => {
+const Home = () => {
+    const history = useHistory();
+
+    const navigateToPortfolio = () => {
+        history.push("/portfolio")
+    }
+
     return (
         <div className={ styles.Wrapper }>
             <div className={ styles.HeaderImage } style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/header.png)` }}></div>
@@ -34,11 +41,11 @@ const home = () => {
             </div>
             <div className={ styles.ViewPortfolio }>
                 <ScrollFadeIn offset={0} direction='to-top'>
-                    <SimpleButton content='Se portfolion' dark/>
+                    <SimpleButton content='Se portfolion' dark onclick={ navigateToPortfolio }/>
                 </ScrollFadeIn>
             </div>
         </div>
     );
 };
 
-export { home as Home };
+export { Home };
