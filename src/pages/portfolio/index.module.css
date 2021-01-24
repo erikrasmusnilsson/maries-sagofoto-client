@@ -17,33 +17,6 @@
     margin: auto;
 }
 
-@media only screen and (max-width: 768px) {
-    .HeaderContent .Introduction {
-      width: 100%;
-      text-align: justify;
-    }
-
-    .Grid {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 3.2rem auto;
-        width: 100%;
-    }
-    
-    .Grid .Column {
-        flex: 1;
-        position: relative;
-        background: #fefefe;
-        border: .2rem solid #fcfcfc;
-        box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
-        margin: 1.2rem auto;
-        padding: 1.5rem;
-        display: inline-block;
-    }
-}
-
 .HeaderContent h2 {
     font-family: 'Nanum Myeongjo', serif;
 }
