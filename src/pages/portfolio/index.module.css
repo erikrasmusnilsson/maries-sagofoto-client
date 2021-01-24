@@ -33,6 +33,7 @@
     }
     
     .Grid .Column {
+        flex: 1;
         position: relative;
         background: #fefefe;
         border: .2rem solid #fcfcfc;
