@@ -9,12 +9,10 @@ const Portfolio = () => {
                     <div className={ styles.Introduction }>
                         <h2>Portfolio</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Vi älskar att med hjälp av kameran skapa magiska bilder från sagans värld.
+                        Det är bara fantasin som sätter gränser brukar man säga, men här finns nog inga gränser.
+                        Vi gör allt för att få till de där konstverken på dig, en älskad vän, släkting, barn, hund som ni önskar.
+                        Välkomna att låta er inspireras i vårat galleri av bilder.
                         </p>
                     </div>
                 </div>
