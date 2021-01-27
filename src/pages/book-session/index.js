@@ -64,7 +64,8 @@ const BookSession = () => {
                 <div className={ styles.HeaderContent }>
                     <h2>Boka Fotografering</h2>
                     <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Önskar du en fotografering av dig eller någon du älskar?
+                    Tveka inte utan hör av dig till oss så skall vi göra allt för att uppfylla dina önskemål.
                     </p>
                 </div>
             </div>
