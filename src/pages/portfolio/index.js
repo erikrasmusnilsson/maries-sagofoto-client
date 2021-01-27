@@ -8,6 +8,7 @@ const Portfolio = () => {
                 <div className={ styles.HeaderContent }>
                     <div className={ styles.Introduction }>
                         <h2>Portfolio</h2>
+                        <h3>Din fotograf i Halland</h3>
                         <p>
                         Vi älskar att med hjälp av kameran skapa magiska bilder från sagans värld.
                         Det är bara fantasin som sätter gränser brukar man säga, men här finns nog inga gränser.

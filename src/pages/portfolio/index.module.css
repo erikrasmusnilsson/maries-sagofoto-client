@@ -17,7 +17,7 @@
     margin: auto;
 }
 
-.HeaderContent h2 {
+.HeaderContent h2, .HeaderContent h3 {
     font-family: 'Nanum Myeongjo', serif;
 }
 

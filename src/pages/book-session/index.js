@@ -85,7 +85,7 @@ const BookSession = () => {
                     onchange={ setEmail } 
                     type="email"/>
                 <Textarea 
-                    placeholder="Ett kort meddelande om vad du vill ha."
+                    placeholder="Välkommen med ditt meddelande"
                     value={ message }
                     onchange={ setMessage } />
                 <SimpleButton content="Skicka" dark onclick={ sendBooking }/>

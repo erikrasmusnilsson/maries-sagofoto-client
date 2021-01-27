@@ -16,7 +16,7 @@ const Home = () => {
         <div className={ styles.Wrapper }>
             <div className={ styles.HeaderImage } style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/header.png)` }}></div>
             <div className={ styles.Introduction }>
-                <InformationPanel title='Sagolika fotografier' content={`
+                <InformationPanel title='Sagolika fotografier i Halland' content={`
                 Vi erbjuder dig en förstklassig upplevelse och gör allt för att dokumentera dina relationer, minnen, dina barn, dig och förvandla det till vackra konstverk att hänga på väggen, ställa i hyllan eller ge bort som den vackraste gåvan till någon som betyder otroligt mycket för dig.
                 Vi på Maries Sagofoto har val att specialisera oss på Magiska sagobilder och vill på ett professionellt och lekfullt sätt fånga ögonblicket som gör bilden till något alldeles extra i ditt hem.
                 Efter att du har bokat din fotografering här på hemsidan så kommer vi överens om tid och plats för en Designkonsultation då vi träffas och planerar allt inför fotograferingen. Varje fotosession är helt anpassad efter just dina tankar, idéer och önskemål.
