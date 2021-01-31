@@ -37,7 +37,7 @@ const information = () => {
                             Betalningen för fotograferingenbetalas senast 7 dagar innan bokad fotografering.
                             En avbokning pga sjukdom är tillåtet.
                         </p>
-                        <img alt="" src={`${process.env.PUBLIC_URL}/images/information_before.jpg`} className={ styles.Image } />
+                        <img alt="" src={`${process.env.PUBLIC_URL}/images/information_under.jpg`} className={ styles.Image } />
                     </div>
                     <div>
                         <h1>Under</h1>
@@ -84,7 +84,7 @@ const information = () => {
                             Vi vill tacka för erat förtroende att få hjälpa er att skapa minnen som kommer att kunna uppskattas i flera
                             generationer. Har ni några frågor så är det bara att ringa, maila eller smsa
                         </p>
-                        <img alt="" src={`${process.env.PUBLIC_URL}/images/information_under.jpg`} className={ styles.Image } />
+                        <img alt="" src={`${process.env.PUBLIC_URL}/images/information_before.jpg`} className={ styles.Image } />
                     </div>
                 </div>
                 <div className={ styles.Pricing }>
