@@ -88,6 +88,15 @@
     margin: 1.2rem;
 }
 
+.Process img {
+    margin-top: 1.2rem;
+    max-width: 100%;
+    padding: 1.2rem;
+    background-color: white;
+    border: 1px solid #eee;
+    filter: drop-shadow(0 .4rem .8rem rgba(0,0,0,0.2));
+}
+
 .Process div:nth-child(2) {
     border-left: .2rem dotted #E3CCCD;
     border-right: .2rem dotted #E3CCCD;
