@@ -1,10 +1,7 @@
 import { useState, useEffect } from 'react';
 import styles from './index.module.css';
 import axios from 'axios';
-
 import { SimpleButton } from '../buttons/basic-button';
-import { Backdrop } from '../backdrop';
-import { ScrollFadeIn } from '../scroll-fade-in';
 import { Modal } from '../modal';
 
 const PortfolioGrid = () => {
@@ -17,12 +14,6 @@ const PortfolioGrid = () => {
     }
 
     useEffect(() => fetchPortfolio(), []);
-
-    const focusedPhoto = magnified ? (
-        <Modal show={ magnified } onclose={ () => demagnify() }>
-            <div className={ styles.Magnified } style={{ background: `url(${axios.defaults.baseURL}/portfolio/${magnified})` }}></div>
-        </Modal>
-    ) : null;
 
     const magnify = (photo) => {
         setMagnified(photo);
