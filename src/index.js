@@ -10,7 +10,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import axios from 'axios';
 import { reducer } from './store/reducer';
 
-axios.defaults.baseURL = 'http://68.183.211.72:3001';
+axios.defaults.baseURL = 'http://68.183.211.72:80';
 
 const store = createStore(reducer);
 
