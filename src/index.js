@@ -10,7 +10,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import axios from 'axios';
 import { reducer } from './store/reducer';
 
-axios.defaults.baseURL = 'http://localhost';
+axios.defaults.baseURL = 'http://mariessagofoto';
 
 const store = createStore(reducer);
 
