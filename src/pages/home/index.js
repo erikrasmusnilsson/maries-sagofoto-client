@@ -28,14 +28,17 @@ const Home = () => {
                 <ScrollFadeIn offset={-200} direction='to-right'>
                     <EmployeeIntro 
                         name='Julia Marie Nilsson' 
-                        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate ve.' 
+                        description='Jag heter Julia och är en 27 årig utbildad förskollärare och mamma till två fantastiska små flickor. Jag älskar att skapa små berättelser genom fotografier. Jag har gått en kurs i Magiska fotografier på Moderskeppet och tillsammans med min mamma, Susanne, jobbar jag för att ge varje fotografi den där lilla extra, magiska känslan. Jag lägger stor vikt vid att skapa harmoni i mina foton genom att plocka upp jordnära toner i fotografierna och fokuserar gärna på att ögonen i ett foto blir framträdande och talande. Jag vill att fotografiet vi har skapat till dig ska bli det vackraste du har sett och det finaste du äger.' 
                         image='julia_nilsson.png' />
                 </ScrollFadeIn>
                 <ScrollFadeIn offset={0} direction='to-left'>
                     <EmployeeIntro 
                         reversed 
                         name='Susanne Marie Lindahl Hjerpe' 
-                        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate ve.' 
+                        description='Mitt namn är Susanne och jag är mamma till Julia och hennes fyra yngre bröder.
+                            Jag har gått fotoutbildningar i flera olika fotogenrer, fotoredigeringar, företagsutveckling och coachingprogram.
+                            Vill ni ha en fotograf som älskar att ha roligt, hitta på poser, hitta vackra miljöer och fånga de där unika ögonblicken?
+                            Tillsammans med Julia skapar jag bilder som blir till magi' 
                         image='susanne_lindahl_hjerpe.png' />
                 </ScrollFadeIn>
             </div>
