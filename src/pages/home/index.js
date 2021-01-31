@@ -33,7 +33,6 @@ const Home = () => {
                 </ScrollFadeIn>
                 <ScrollFadeIn offset={0} direction='to-left'>
                     <EmployeeIntro 
-                        reversed 
                         name='Susanne Marie Lindahl Hjerpe' 
                         description='Mitt namn är Susanne och jag är mamma till Julia och hennes fyra yngre bröder.
                             Jag har gått fotoutbildningar i flera olika fotogenrer, fotoredigeringar, företagsutveckling och coachingprogram.
