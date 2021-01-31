@@ -67,7 +67,7 @@ const information = () => {
                         <p>
                             Ca 2 veckor efter fotograferingen så träffas vi för bildvisning (om ni önskar annat alternativ pga Covid-19
                             så ordnar vi en bildvisning online).
-                            Vi tittar igen óm bilderna tillsammans och ni kan i lugn och ro beställa de bilder/bildpaket ni önskar.
+                            Vi tittar igenom bilderna tillsammans och ni kan i lugn och ro beställa de bilder/bildpaket ni önskar.
                             Bildvisningen tar ca 30 minuter
                         </p>
                         <h3>Betalning</h3>

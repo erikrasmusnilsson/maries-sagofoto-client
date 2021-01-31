@@ -65,21 +65,18 @@
 
 .Content h1 {
     text-align: center;
-    color: #523A37;
     font-family: 'Petrona', serif;
     font-weight: normal;
 }
 
 .Content h3 {
     font-family: 'Petrona', serif;
-    color: #523A37;
     font-weight: normal;
     font-size: 2.2rem;
 }
 
 .Content p {
     font-weight: normal;
-    color: #523A37;
     font-size: 1.4rem;
 }
 
