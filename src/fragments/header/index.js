@@ -10,7 +10,7 @@ const Header = ({ user, login, logout }) => {
     const routes = [
         { path: '/', name: 'Hem' },
         { path: '/portfolio', name: 'Portfolio' },
-        { path: '/priser', name: 'Priser' },
+        { path: '/information', name: 'Information' },
         { path: '/boka-fotografering', name: 'Boka Fotografering' },
     ];
 

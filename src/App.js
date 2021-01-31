@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import styles from './app.module.css';
 import { Switch, Route } from 'react-router-dom';
 import axios from 'axios';
@@ -10,7 +10,7 @@ import { Header } from './fragments/header';
 import { Footer } from './fragments/footer';
 
 import { Home } from './pages/home'; 
-import { Prices } from './pages/prices';
+import { Information } from './pages/information';
 import { Portfolio } from './pages/portfolio';
 import { BookSession } from './pages/book-session';
 import { AddAdmin } from './pages/add-admin';
@@ -37,7 +37,7 @@ const App = ({ user, login, logout }) => {
       <Header user={ user } login={ login } logout={ logout } />
       <Switch>
         <Route exact path='/' component={ Home } />
-        <Route exact path='/priser' component={ Prices } />
+        <Route exact path='/information' component={ Information } />
         <Route exact path='/portfolio' component={ Portfolio } />
         <Route exact path='/boka-fotografering' component={ BookSession } />
         <Route exact path='/add-admin'>
