@@ -22,20 +22,15 @@ const information = () => {
                         <h3>Kläder & Rekvisita</h3>
                         <p>
                             Vad det gäller kläder så skall ni tänka på att det fungerar allra bäst med kläder i ljusa färger utan tryck
-                            och gäna kläder i olika lager.
+                            och gärna kläder i olika lager.
                             Ha gärna kläder eller någon rekvisita som tar upp någon annan färg i miljön där vi fotograferar.
-                            Önskar ni låna kläder eller rekvistia så lånar vi gärna ut detta utan extra kostnad, annars går det jättebra
+                            Önskar ni låna kläder eller rekvistia så lånar vi ut detta utan extra kostnad, annars går det jättebra
                             att ta egna kläder och rekvisita.
                         </p>
                         <h3>Musik</h3>
                         <p>
                             Vi önskar gärna veta vad ni eller erat barn gillar för musik/låtar då vi ofta använder oss av detta under
                             fotograferingen.    
-                        </p>
-                        <h3>Betalning</h3>
-                        <p>
-                            Betalningen för fotograferingenbetalas senast 7 dagar innan bokad fotografering.
-                            En avbokning pga sjukdom är tillåtet.
                         </p>
                         <img alt="" src={`${process.env.PUBLIC_URL}/images/information_under.jpg`} className={ styles.Image } />
                     </div>
@@ -77,7 +72,7 @@ const information = () => {
                         <h3>Leverans</h3>
                         <p>
                             De digitala bilderna levereras så snart betalningen är gjord.
-                            Önskar ni produktbesällning så skickas dessa så snart vi kan
+                            Önskar ni produktbeställning så skickas dessa så snart vi kan
                         </p>
                         <h3>Tack</h3>
                         <p>
@@ -90,16 +85,16 @@ const information = () => {
                 <div className={ styles.Pricing }>
                     <h1>Prislista</h1>
                     <div>
-                        <h3>Paket 1 - 2800 kr</h3>
+                        <h3>Paket 1 - 3200 kr</h3>
                         <p>5 digitala bilder som levereras av ett vackert USB-minne i trä</p>
                     </div>
                     <div>
-                        <h3>Paket 2 - 3800 kr</h3>
-                        <p>10 digitala bilder, 3 förstoringar 10X15cm som levereras i en fin träbox</p>
+                        <h3>Paket 2 - 4200 kr</h3>
+                        <p>10 digitala bilder, 3 förstoringar 13X18 cm som levereras i en vacker linnebox</p>
                     </div>
                     <div>
-                        <h3>Paket 3 - 5800 kr</h3>
-                        <p>Alla digitala bilder (levereras i ett vackert USB-minne av trä), 10 förstoringar 10X15cm, 2 fotoblock samt bildspelet</p>
+                        <h3>Paket 3 - 6200 kr</h3>
+                        <p>Alla digitala bilder (levereras i ett vackert USB-minne av trä), 10 förstoringar 13X18 cm, samt 1 bildplatta 24X32 cm</p>
                     </div>
                     <div>
                         <h3>Ingår i alla paket</h3>
