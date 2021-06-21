@@ -85,16 +85,16 @@ const information = () => {
                 <div className={ styles.Pricing }>
                     <h1>Prislista</h1>
                     <div>
-                        <h3>Paket 1 - 3200 kr</h3>
+                        <h3>Paket 1 - 3800 kr</h3>
                         <p>5 digitala bilder som levereras av ett vackert USB-minne i trä</p>
                     </div>
                     <div>
-                        <h3>Paket 2 - 4200 kr</h3>
-                        <p>10 digitala bilder, 3 förstoringar 13X18 cm som levereras i en vacker linnebox</p>
+                        <h3>Paket 2 - 4800 kr</h3>
+                        <p>10 digitala bilder som levereras av ett vackert USB-minne i trä</p>
                     </div>
                     <div>
-                        <h3>Paket 3 - 6200 kr</h3>
-                        <p>Alla digitala bilder (levereras i ett vackert USB-minne av trä), 10 förstoringar 13X18 cm, samt 1 bildplatta 24X32 cm</p>
+                        <h3>Paket 3 - 5500 kr</h3>
+                        <p>15 digitala bilder som levereras av ett vackert USB-minne i trä</p>
                     </div>
                     <div>
                         <h3>Ingår i alla paket</h3>
@@ -104,6 +104,7 @@ const information = () => {
                         <p>Fotografering</p>
                         <p>Efterarbete med bland annat redigering</p>
                         <p>Bildvisning</p>
+                        <p>* Vid genomförd fotografering debiteras 1000 kr, denna summa avdrags sedan från det valda paketets pris.</p>
                     </div>
                 </div>
             </div>
